@@ -1,9 +1,9 @@
-package cr.ac.una;
+package cr.ac.una.Entidades;
 
-public class Persona {
+public abstract class Persona {
     // Propiedades (atributos)
-    private String nombre;
-    private int edad;
+    protected String nombre;
+    protected int edad;
     private static int cantidadDePersonas;
 
     // Constructor
@@ -37,4 +37,8 @@ public class Persona {
     public void saludar() {
         System.out.println("Hola, mi nombre es " + nombre + " y tengo " + edad + " años.");
     }
+
+    // Metodos abstractos NO tienen implementacion en la clase padre
+
+    public abstract String condicion();
 }
